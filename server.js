@@ -125,12 +125,12 @@ app.put('/api/bookings/:id', async (req, res) => {
 });
 
 // Serve frontend
-app.use(express.static(path.join(__dirname, '../frontend')));
+// app.use(express.static(path.join(__dirname, '../frontend')));
 
-// Catch-all for SPA routing
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../frontend/index.html'));
-});
+// // Catch-all for SPA routing
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, '../frontend/index.html'));
+// });
 
 // Start Server
 async function startServer() {
